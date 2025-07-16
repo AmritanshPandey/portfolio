@@ -1,0 +1,564 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Palette */
+:root {
+
+    /*Surface Color */
+    --surface-light: #FFFCF1;
+    --surface-dark: #EDEDE5;
+    --surface-black: #141414;
+    --yellow-stikcy: #FFF6C8;
+    --green-stikcy: #E0FFC8;
+    --teal-stikcy: #C8FFF2;
+    --blue-stikcy: #C8DBFF;
+    --purple-stikcy: #E0C8FF;
+    --red-stikcy: #FFC8C8;
+
+    /* Text Colors */
+    --black-text: #141414;
+    --grey-text: #706C61;
+    --primary-text: #E42535;
+    --white-text: #FFFCF1;
+    --yellow-stikcy-text: #84793F;
+    --green-stikcy-text: #5D843F;
+    --teal-stikcy-text: #3E8473;
+    --blue-stikcy-text: #3F5785;
+    --purple-stikcy-text: #5C3D84;
+    --red-stikcy-text: #853D3D;
+
+    /* Border Color */
+    --border-color-light: #FFFCF1;
+    --border-color-dark: #706C61;
+
+    /* Spacing Variables */
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 56px;
+    --spacing-xxxl: 64px;
+
+
+    /* Font sizes */
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 20px;
+    --font-size-xl: 28px;
+
+    /*Border Radius */
+    --border-radius-sm: 12px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 20px;
+    --border-radius-xl: 32px;
+}
+
+
+/* Grids and Containers */
+
+.container {
+    padding: 24px 200px;
+    margin: 0 auto;
+}
+
+.full-width {
+    width: 100%;
+    margin: 24px auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-1-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      gap: var(--spacing-lg);
+}
+
+.flex-2-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      gap: var(--spacing-lg);
+}
+
+.flex-3-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: space-between;
+}
+
+/* Default: 4 items in a row */
+.col-4 {
+    flex: 0 0 25%;
+    /* 100 / 4 */
+}
+
+/* For 3 items in a row */
+.col-3 {
+    flex: 0 0 33.33%;
+}
+
+/* For 2 items in a row */
+.col-2 {
+    flex: 0 0 50%;
+}
+
+
+/* Global typography */
+html,
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size-base);
+    background-color: var(--surface-light);
+}
+
+/* Typography - Global styles */
+h1 {
+    font-size: 96px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 120px;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 96px;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.link-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Other typography */
+caption {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.caption-bold {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+/* Icons */
+
+.icon-base {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-small {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-medium {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-large {
+    width: 48px;
+    height: 48px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Typography and Layout */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    :root {
+        /* Spacing Variables */
+        --spacing-xs: 4px;
+        --spacing-sm: 8px;
+        --spacing-md: 12px;
+        --spacing-lg: 20px;
+        --spacing-xl: 24px;
+        --spacing-xxl: 48px;
+        --spacing-xxxl: 56px;
+
+        /* Font sizes */
+        --font-size-base: 16px;
+        --font-size-sm: 14px;
+        --font-size-lg: 20px;
+        --font-size-xl: 24px;
+
+        /*Border Radius */
+        --border-radius-sm: 8px;
+        --border-radius-md: 12px;
+        --border-radius-lg: 18px;
+        --border-radius-xl: 24px;
+    }
+
+    /* Typography */
+
+    h1 {
+        font-size: 72px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 88px;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 72px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 54px;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .link-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Other typography */
+    caption {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .caption-bold {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    label {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+
+    /* Icons */
+
+    .icon-base {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-small {
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-medium {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-large {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* Grids and Containers */
+
+    .container {
+        padding: 16px 48px;
+        margin: 0 auto;
+    }
+
+    .flex-1-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-2-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-3-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Default: 4 items in a row */
+    .col-4 {
+        flex: 0 0 50%;
+        /* 100 / 4 */
+    }
+
+    /* For 3 items in a row */
+    .col-3 {
+        flex: 0 0 50%;
+    }
+
+    /* For 2 items in a row */
+    .col-2 {
+        flex: 0 0 100%;
+    }
+
+
+}
+
+
+/* Phone */
+@media (max-width: 480px) {
+    :root {
+        /* Spacing Variables */
+        --spacing-xs: 4px;
+        --spacing-sm: 8px;
+        --spacing-md: 12px;
+        --spacing-lg: 16px;
+        --spacing-xl: 24px;
+        --spacing-xxl: 40px;
+        --spacing-xxxl: 48px;
+
+        /* Font sizes */
+        --font-size-base: 14px;
+        --font-size-sm: 12px;
+        --font-size-lg: 16px;
+        --font-size-xl: 20px;
+
+        /*Border Radius */
+        --border-radius-sm: 8px;
+        --border-radius-md: 12px;
+        --border-radius-lg: 16px;
+        --border-radius-xl: 20px;
+    }
+
+    /* Typography */
+
+    h1 {
+        font-size: 64px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 78px;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 54px;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .link-text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Other typography */
+    caption {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .caption-bold {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    label {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+
+    /* Icons */
+
+    .icon-base {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-small {
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-medium {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-large {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* Grids and Containers */
+
+    .container {
+        padding: 16px 24px;
+        margin: 0 auto;
+    }
+
+     .flex-1-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-2-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-3-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-width {
+        width: 100%;
+        margin: 16px auto;
+    }
+
+    /* Default: 4 items in a row */
+    .col-4 {
+        flex: 0 0 50%;
+        /* 100 / 4 */
+    }
+
+    /* For 3 items in a row */
+    .col-3 {
+        flex: 0 0 50%;
+    }
+
+    /* For 2 items in a row */
+    .col-2 {
+        flex: 0 0 100%;
+    }
+
+
+}

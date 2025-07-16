@@ -1,7 +1,7 @@
-export default function UIComponentPage() {
+export default function ShortProjectsPage() {
   return (
     <div>
-      <h1>UI Component</h1>
+      <h1>Short Projects</h1>
       <p>This is the UI Component page placeholder.</p>
     </div>
   );

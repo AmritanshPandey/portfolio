@@ -40,23 +40,22 @@
 /* Tablet */
 @media (max-width: 768px) {
 
-    .contact {
+    .contact:not(:last-child) {
         padding-bottom: var(--spacing-md);
         border-bottom: solid 1px var(--border-color);
     }
 
     .footerText {
         font-size: var(--font-size-sm);
-        color: var(--white-text);
-        background-color: var(--surface-black);
-        padding-bottom: 16px;
-        padding-top: 0;
+        color: var(--black-text);
+        background-color: var(--surface-light);
+        padding: 16px 0;
     }
 
 }
 
 @media (max-width: 480px) {
-    .contact {
+    .contact:not(:last-child) {
         padding-bottom: var(--spacing-md);
         border-bottom: solid 1px var(--border-color-light);
     }

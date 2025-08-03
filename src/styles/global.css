@@ -11,6 +11,7 @@
 
     /*Surface Color */
     --surface-light: #FFFCF1;
+    --surface-grey: #DCDCC9;
     --surface-dark: #EDEDE5;
     --surface-black: #141414;
     --yellow-stikcy: #FFF6C8;
@@ -25,6 +26,7 @@
     --grey-text: #706C61;
     --primary-text: #E42535;
     --white-text: #FFFCF1;
+    --hover-text: #C5C58A;
     --yellow-stikcy-text: #84793F;
     --green-stikcy-text: #5D843F;
     --teal-stikcy-text: #3E8473;
@@ -62,9 +64,15 @@
 
 /* Grids and Containers */
 
+
+
 .container {
-    padding: 24px 200px;
+    padding: 24px 20%;
     margin: 0 auto;
+}
+
+.container-no-vertical-padding {
+    padding: 24px 20%;
 }
 
 .full-width {
@@ -82,14 +90,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      gap: var(--spacing-lg);
+    gap: var(--spacing-lg);
 }
 
 .flex-2-column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      gap: var(--spacing-lg);
+    gap: var(--spacing-lg);
 }
 
 .flex-3-column {
@@ -171,6 +179,7 @@ a {
     line-height: 24px;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 
@@ -524,7 +533,11 @@ img {
         margin: 0 auto;
     }
 
-     .flex-1-column {
+    .container-no-vertical-padding {
+        padding: 0 16px;
+    }
+
+    .flex-1-column {
         display: flex;
         flex-direction: column;
     }
@@ -561,4 +574,43 @@ img {
     }
 
 
+}
+
+/* iPad Mini (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 834px) {
+    /* Your styles */
+}
+
+/* iPad Air / Pro 11" */
+@media (min-width: 835px) and (max-width: 1024px) {
+    /* Your styles */
+}
+
+/* iPad Pro 12.9" */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    /* Your styles */
+}
+
+
+
+
+
+/* iPad (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Styles for portrait mode */
+}
+
+/* iPad (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Styles for landscape mode */
+}
+
+/* Phone (portrait) */
+@media (max-width: 480px) and (orientation: portrait) {
+    /* Styles for portrait phone */
+}
+
+/* Phone (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Styles for landscape phone */
 }

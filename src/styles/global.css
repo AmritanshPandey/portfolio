@@ -64,15 +64,8 @@
 
 /* Grids and Containers */
 
-
-
-.container {
-    padding: 24px 20%;
-    margin: 0 auto;
-}
-
-.container-no-vertical-padding {
-    padding: 24px 20%;
+.main-container {
+    margin-top: 88px;
 }
 
 .full-width {
@@ -368,10 +361,7 @@ img {
 
     /* Grids and Containers */
 
-    .container {
-        padding: 16px 48px;
-        margin: 0 auto;
-    }
+
 
     .flex-1-column {
         display: flex;
@@ -528,13 +518,9 @@ img {
 
     /* Grids and Containers */
 
-    .container {
-        padding: 16px 24px;
-        margin: 0 auto;
-    }
 
-    .container-no-vertical-padding {
-        padding: 0 16px;
+    .main-container {
+        margin-top: 60px;
     }
 
     .flex-1-column {

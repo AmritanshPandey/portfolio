@@ -1,3 +1,14 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--surface-black);
+}
+
+
+
 .navDesktop {
   display: flex;
   justify-content: space-between;
@@ -68,6 +79,20 @@
 }
 
 
+
+.dropdown li {
+  padding: 16px;
+}
+
+.dropdown li a {
+  color: var(--white-text);
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  color: var(--hover-text);
+}
+
 .dropdown {
   display: block;
   position: absolute;
@@ -81,23 +106,6 @@
   z-index: 100;
 }
 
-.dropdown li {
-  padding: 16px;
-}
-
-.dropdown li a {
-  color: var(--white-text);
-  text-decoration: none;
-}
-
-.dropdown li a:hover {
- color: var(--hover-text);
-}
-
-
-
-
-
 @media (max-width: 768px) {
 
   .navDesktop {
@@ -107,82 +115,161 @@
   .hamburgerMenu {
     display: flex;
     color: var(--black-text);
-  }
-}
-
-/* Mobile Header */
-
-.menuButton {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 50;
-  background: none;
-  border: none;
-  padding: 8px;
-}
-
-.icon {
-  width: 28px;
-  height: 28px;
-  color: #333;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 40;
-  display: flex;
-  flex-direction: column;
-  animation: slideIn 0.3s ease forwards;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
+    align-items: center;
   }
 
-  to {
-    transform: translateX(0);
+  .header {
+    background-color: var(--surface-black);
+    padding: 8px 16px;
+    align-items: center;
+
   }
+
+  .mobileNav li {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+  }
+
+  .mobileNav a {
+    color: var(--black-text);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
+  .dropdownToggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-text);
+    gap: 4px;
+    padding: 0;
+  }
+.dropdownToggle:hover {
+  color: var(--black-text);
+}
+  .menuButton {
+    background: none;
+    border: none;
+    padding: 8px 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-text);
+  }
+
+  .dropdown {
+    position: relative;
+    overflow: hidden;
+    background: var(--surface-white);
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown li a {
+    padding: 16px 0;
+    color: var(--black-text);
+  }
+
+  .dropdownActive {
+    max-height: 500px;
+    opacity: 1;
+    padding:  8px 16px 0px;
+  }
+
+  .dropdownActive li a {
+    padding: 8px 0;
+    font-size: var(--font-size-base);
+  }
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--surface-light);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .slideIn {
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .slideOut {
+    animation: slideOut 0.3s ease forwards;
+  }
+
+  .dropdownIcon {
+    width: 24px;
+    height: 24px;
+    color: var(--black-text);
+    transition: transform 0.3s ease;
+  }
+
+  .dropdownIcon:hover {
+  color: var(--black-text);
 }
 
-.menu {
-  padding: 24px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+  .menu {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .closeButton {
+    background: none;
+    border: none;
+    align-self: flex-end;
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+
+  .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
 }
 
-.closeButton {
-  background: none;
-  border: none;
-  align-self: flex-end;
-  margin-bottom: 16px;
-  padding: 8px;
-}
-
-.nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 18px;
-}
-
-.nav li a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav li a:hover {
-  color: #22c55e;
-}

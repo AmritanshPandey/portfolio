@@ -1,10 +1,12 @@
 .footer {
     background-color: var(--surface-black);
     color: var(--white-text);
-    text-align: center;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+
+}
+
+.footerContainer {
+    padding: 24px 200px;
 }
 
 
@@ -34,6 +36,7 @@
     color: var(--black-text);
     background-color: var(--surface-light);
     padding: 16px;
+    text-align: center;
 }
 
 
@@ -55,8 +58,16 @@
 }
 
 @media (max-width: 480px) {
+
+    .footerContainer {
+        padding: 24px;
+    }
+
+
     .contact:not(:last-child) {
         padding-bottom: var(--spacing-md);
         border-bottom: solid 1px var(--border-color-light);
     }
+
+
 }

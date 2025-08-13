@@ -1,6 +1,10 @@
 export default function HomePage() {
   return (
-    <div>
+    <div className="container">
+   <h1 className="title">Welcome to lio</h1>
+     
+     
+
       <h1>Title</h1>
       
   

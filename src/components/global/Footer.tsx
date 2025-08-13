@@ -9,7 +9,7 @@ import { DocumentTextIcon } from '@heroicons/react/24/outline';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="container">
+      <div className={styles.footerContainer}>
         <div className="flex-3-column">
   
             <div className={styles.contact}>

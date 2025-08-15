@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "UX Case Studies",
+    "description": "A UX case study focused on solving user problems through design, testing, and development.",
+    "image": "/images/workcard.png"
+  },
+  {
+    "id": 2,
+    "title": "Lean UX Projects",
+    "description": "Quick UX projects that emphasize fast thinking, clear problem-solving, and purposeful design.",
+    "image": "/images/workcard.png"
+  }
+]

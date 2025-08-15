@@ -66,6 +66,7 @@
 
 .main-container {
     margin-top: 88px;
+    width: 100%;
 }
 
 .full-width {
@@ -426,10 +427,10 @@ img {
     /* Typography */
 
     h1 {
-        font-size: 64px;
+        font-size: 48px;
         font-weight: 500;
         text-transform: uppercase;
-        line-height: 78px;
+        line-height: 64px;
     }
 
     h2 {
@@ -521,6 +522,7 @@ img {
 
     .main-container {
         margin-top: 60px;
+        width: 100%;
     }
 
     .flex-1-column {

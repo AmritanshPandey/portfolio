@@ -10,9 +10,9 @@
 :root {
 
     /*Surface Color */
-    --surface-light: #FFFCF1;
-    --surface-grey: #DCDCC9;
-    --surface-dark: #EDEDE5;
+    --surface-light: #fdf1f1;
+    --surface-grey: #FFE8EB;
+    --surface-dark: #e9a1b2;
     --surface-black: #141414;
     --yellow-stikcy: #FFF6C8;
     --green-stikcy: #E0FFC8;
@@ -24,9 +24,9 @@
     /* Text Colors */
     --black-text: #141414;
     --grey-text: #706C61;
-    --primary-text: #E42535;
+    --primary-text: #8C6BB8;
     --white-text: #FFFCF1;
-    --hover-text: #C5C58A;
+    --hover-text: #E9A1B2;
     --yellow-stikcy-text: #84793F;
     --green-stikcy-text: #5D843F;
     --teal-stikcy-text: #3E8473;
@@ -65,7 +65,7 @@
 /* Grids and Containers */
 
 .main-container {
-    margin-top: 88px;
+
     width: 100%;
 }
 
@@ -137,28 +137,32 @@ body {
 /* Typography - Global styles */
 h1 {
     font-size: 96px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 600;
     line-height: 120px;
 }
 
 h2 {
     font-size: 64px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 600;
     line-height: 96px;
 }
 
 h3 {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 60px;
 }
 
 h4 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 40px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
 }
 
 p {
@@ -237,6 +241,28 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.text-button {
+    cursor: pointer;
+    background-color: none;
+    color: var(--primary-text);
+    padding: 4px 0;
+    border-radius: var(--border-radius-md);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.primary-button {
+    background-color: var(--primary-text);
+    color: var(--white-text);
+    padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
 
 /* Responsive Typography and Layout */
@@ -521,7 +547,7 @@ img {
 
 
     .main-container {
-        margin-top: 60px;
+
         width: 100%;
     }
 

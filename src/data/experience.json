@@ -1,0 +1,231 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "company": "Mastercard",
+      "role": "Senior Specialist - UX Designer",
+      "type": "Full-time",
+      "startDate": "June 2022",
+      "endDate": "Present",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/mc.png",
+      "category": "Current",
+      "description": [
+        "Collaborate with the product team and stakeholders to understand project requirements and goals.",
+        "Create user experience flows and designs based on discussions and feedback.",
+        "Develop web applications for fintech products using the React.js framework.",
+        "Coordinate with the tech team to support them in implementing and developing the products.",
+        "Ensure designs align with brand guidelines and maintain a cohesive visual identity.",
+        "Conduct user research and usability testing to gather insights and optimize user experiences.",
+        "Iterate designs based on feedback and data-driven insights."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Mamaearth (Honasa)",
+      "role": "UX Designer",
+      "type": "Full-time",
+      "startDate": "April 2021",
+      "endDate": "May 2022",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/me.png",
+      "category": "Past",
+      "description": [
+        "Collaborate with the product team and stakeholders to understand project requirements and goals.",
+        "Create user experience flows and designs based on discussions and feedback.",
+        "Develop web applications for fintech products using the React.js framework.",
+        "Coordinate with the tech team to support them in implementing and developing the products.",
+        "Ensure designs align with brand guidelines and maintain a cohesive visual identity.",
+        "Conduct user research and usability testing to gather insights and optimize user experiences.",
+        "Iterate designs based on feedback and data-driven insights."
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Lythouse",
+      "role": "Product Designer",
+      "type": "Full-time",
+      "startDate": "April 2020",
+      "endDate": "April 2021",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/lh.png",
+      "category": "Past",
+      "description": [
+        "Collaborate with the product team and stakeholders to understand project requirements and goals.",
+        "Create user experience flows and designs based on discussions and feedback.",
+        "Develop web applications for fintech products using the React.js framework.",
+        "Coordinate with the tech team to support them in implementing and developing the products.",
+        "Ensure designs align with brand guidelines and maintain a cohesive visual identity.",
+        "Conduct user research and usability testing to gather insights and optimize user experiences.",
+        "Iterate designs based on feedback and data-driven insights."
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Designerrs Academy",
+      "role": "Mentor for UX Course",
+      "type": "Mentor",
+      "startDate": "May 2023",
+      "endDate": "November 2024",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/da.png",
+      "category": "Mentoring"
+    },
+    {
+      "id": 5,
+      "company": "Masters' Union  - Mentor for UX Course",
+      "role": "Mentor for UX Course",
+      "type": "Mentor",
+      "startDate": "April 2023",
+      "endDate": "Ocotber 2023",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/mu.png",
+      "category": "Mentoring"
+    },
+    {
+      "id": 6,
+      "company": "Microsoft",
+      "role": "Campus Student Partner",
+      "type": "Part-time",
+      "startDate": "August 2019",
+      "endDate": "July 2024",
+      "location": "Noida, Uttar Pradesh, India",
+      "logo": "/assets/images/logos/ms.png",
+      "category": "Internships"
+    },
+    {
+      "id": 7,
+      "company": "Pick My Work",
+      "role": "UX Design Intern",
+      "type": "Internship",
+      "startDate": "November 2019",
+      "endDate": "April 2020",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/pmw.png",
+      "category": "Internships"
+    },
+    {
+      "id": 8,
+      "company": "DUIT",
+      "role": "UX Design Intern",
+      "type": "Internship",
+      "startDate": "May 2018",
+      "endDate": "November 2019",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/d.png",
+      "category": "Internships"
+    },
+    {
+      "id": 9,
+      "company": "Keywords Studios",
+      "role": "FQA Game Tester",
+      "type": "Internship",
+      "startDate": "April 2017",
+      "endDate": "July 2017",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/ks.png",
+      "category": "Internships"
+    },
+    {
+      "id": 10,
+      "company": "Airtel",
+      "role": "Sales",
+      "type": "Internship",
+      "startDate": "May 2017",
+      "endDate": "April 2017",
+      "location": "Gurugram, Haryana, India",
+      "logo": "/assets/images/logos/a.png",
+      "category": "Internships"
+    },
+    {
+      "id": 11,
+      "company": "Nando's Australia",
+      "role": "Crew Member",
+      "type": "Part-time",
+      "startDate": "April 2016",
+      "endDate": "February 2017",
+      "location": "Melbourne, Victoria, Australia",
+      "logo": "/assets/images/logos/n.png",
+      "category": "Part-time"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "category": "MicroMasters",
+      "school": "edX",
+      "degree": "UX Design and Evaluation",
+      "university": "HEC MontrealX",
+      "logo": "/assets/images/logos/hec.png",
+      "startDate": "2024",
+      "endDate": "2025",
+      "mode": "Online"
+    },
+    {
+      "id": 2,
+      "category": "MicroMasters",
+      "school": "The University of British Columbia",
+      "degree": "Algorithms and Data Structures",
+      "logo": "/assets/images/logos/ubc.png",
+      "startDate": "2024",
+      "endDate": "2025",
+      "mode": "Online"
+    },
+    {
+      "id": 3,
+      "category": "Postgraduate",
+      "school": "Institute of Management Technology, Ghaziabad",
+      "degree": "Post Graduate Diploma in Management, Marketing",
+      "logo": "/assets/images/logos/imt.png",
+      "startDate": "July 2021",
+      "endDate": "September 2023",
+      "location": "Ghaziabad, Uttar Pradesh, India",
+      "mode": "Online"
+    },
+    {
+      "id": 4,
+      "category": "Undergraduate",
+      "school": "Amity University",
+      "degree": "Bachelor of Computer Applications",
+      "logo": "/assets/images/logos/au.png",
+      "startDate": "2017",
+      "endDate": "2020",
+      "location": "Noida, Uttar Pradesh, India",
+      "mode": "On Campus"
+    },
+    {
+      "id": 5,
+      "category": "Undergraduate",
+      "school": "Monash University",
+      "degree": "Bachelor of Engineering - Computer Systems Engineering",
+      "logo": "/assets/images/logos/m.png",
+      "startDate": "2015",
+      "endDate": "2017 (Discontinued)",
+      "location": "Melbourne, Victoria, Australia",
+      "mode": "On Campus"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "category": "Frontend",
+      "name": "React.js",
+      "logo": "/assets/images/logos/dps.png"
+    },
+    {
+      "id": 2,
+      "category": "Frontend",
+      "name": "Next.js"
+    },
+    {
+      "id": 3,
+      "category": "Design",
+      "name": "Figma"
+    },
+    {
+      "id": 4,
+      "category": "Tools",
+      "name": "Git & GitHub"
+    }
+  ]
+}

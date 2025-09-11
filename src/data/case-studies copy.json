@@ -1,0 +1,785 @@
+{
+    "caseStudies": [
+        {
+            "id": 1,
+            "banner": "/assets/images/case-studies/banner-1.jpg",
+            "thumbnail": "/assets/images/case-studies/thumbnail-1.jpg",
+            "title": "Sole Hub",
+            "timeline": "7 months",
+            "challenge": "India's sneaker scene is vibrant yet scattered across brand sites, boutique raffles, and resale groups. Users struggle with discovering drops, verifying authenticity, and navigating clunky checkouts. Sole Hub aims to centralize the experience with fair raffles, a transparent release calendar, UPI-first payments, personalization, and strong anti-bot defenses.",
+            "goal": [
+                "Fair Access: Design verifiable, bot-resistant raffles and drop flows.",
+                "Personalization: Tailor alerts and curation by size, preferences, and history.",
+                "Seamless Checkout: Lead with UPI, support cards/EMI, and enable fast refunds.",
+                "Community & Exclusivity: Build perks—early access, members-only content, and creator-led drops.",
+                "Scalability: Optimize for patchy networks and low-end devices across Tier-1 to Tier-3 cities."
+            ],
+            "timeLine": {
+                "researchPhase": "Month 1",
+                "wireframePhase": "Month 2",
+                "designHifi": "Month 3-4",
+                "finalDesign": "Month 4",
+                "prototype": "Month 4-5",
+                "development": "Month 5-6",
+                "testing": "Month 6",
+                "launch": "Month 7"
+            },
+            "research": {
+                "goal": "Understand motivations, trust barriers, and behaviors in limited drop purchases across cities and price bands.",
+                "behaviorTrends": {
+                    "trend1": "UPI dominance for payments and refunds.",
+                    "trend2": "Calendar-first planning for drops and restocks.",
+                    "trend3": "Creator-led drops drive discovery and trust.",
+                    "trend4": "Resale verification is a must-have even for retail drops."
+                },
+                "painPoints": {
+                    "point1": "Opaque raffle outcomes; suspicion of bots and backdoors.",
+                    "point2": "Fragmented information across multiple channels.",
+                    "point3": "Slow refunds and limited payment flexibility."
+                },
+                "keyfinding": {
+                    "finding1": "Users want provably fair raffles with visible odds and draw proofs.",
+                    "finding2": "A single, filterable release calendar reduces FOMO.",
+                    "finding3": "Size-based personalization doubles alert relevance.",
+                    "finding4": "UPI + express refunds increases repeat purchase intent.",
+                    "finding5": "Community status and badges increase engagement."
+                },
+                "keyfindingData": {
+                    "chart1": {
+                        "title": "User Demographics (Target Audience)",
+                        "dataset": [
+                            {
+                                "name": "Sneakerheads (Collectors/Resellers)",
+                                "value": 40
+                            },
+                            {
+                                "name": "Fashion-forward Youth (18-28)",
+                                "value": 38
+                            },
+                            {
+                                "name": "Casual Sportswear Buyers",
+                                "value": 22
+                            }
+                        ],
+                        "units": "percent"
+                    },
+                    "chart2": {
+                        "title": "User Preferences for Sneaker Shopping",
+                        "dataset": [
+                            {
+                                "name": "Fair Raffles",
+                                "value": 55
+                            },
+                            {
+                                "name": "Transparent Release Calendars",
+                                "value": 28
+                            },
+                            {
+                                "name": "Personalized Alerts",
+                                "value": 17
+                            }
+                        ],
+                        "units": "percent"
+                    }
+                },
+                "competitiveAnalysis": {
+                    "competitor1": {
+                        "name": "Boutique Nova",
+                        "info": "Community-first boutique with curated drops",
+                        "feature1": "Raffle Transparency",
+                        "feature1Info": "Basic odds shown; no cryptographic proof.",
+                        "feature2": "Release Calendar",
+                        "feature2Info": "Weekly highlights; limited filters.",
+                        "feature3": "Payment Options",
+                        "feature3Info": "Cards and UPI; refunds take 3-5 days.",
+                        "feature4": "Community",
+                        "feature4Info": "Local events; small creator collabs.",
+                        "feature5": "Anti-bot",
+                        "feature5Info": "Email/IP checks; limited device fingerprinting."
+                    },
+                    "competitor2": {
+                        "name": "DropSquare",
+                        "info": "Mobile-first app focused on drop alerts",
+                        "feature1": "Alerts",
+                        "feature1Info": "Push + WhatsApp digests; basic size filters.",
+                        "feature2": "Checkout",
+                        "feature2Info": "UPI-first; limited EMI.",
+                        "feature3": "Trust",
+                        "feature3Info": "In-app legit checks via images.",
+                        "feature4": "Raffles",
+                        "feature4Info": "Queue-based; no public audit trail.",
+                        "feature5": "Support",
+                        "feature5Info": "Chat support in business hours only."
+                    },
+                    "competitor3": {
+                        "name": "KicksBay India",
+                        "info": "Marketplace with resale focus",
+                        "feature1": "Verification",
+                        "feature1Info": "Centralized verification hub; paid tiers.",
+                        "feature2": "Calendar",
+                        "feature2Info": "Brand-sourced feed; limited indie collabs.",
+                        "feature3": "Payments",
+                        "feature3Info": "UPI, Cards, BNPL; refunds vary by seller.",
+                        "feature4": "Community",
+                        "feature4Info": "Seller ratings and collection showcases.",
+                        "feature5": "Anti-bot",
+                        "feature5Info": "Queue throttling; CAPTCHA only."
+                    }
+                },
+                "targetAudience": {
+                    "description": "Urban sneaker fans aged 18–35 in Tier-1/2 cities who value authenticity, fair access, and fast, frictionless payments. Highly active on Instagram and Discord; follow creators and boutiques.",
+                    "image1": "/assets/images/case-studies/target-audience-1.jpg",
+                    "image2": "/assets/images/case-studies/target-audience-2.jpg",
+                    "image3": "/assets/images/case-studies/target-audience-3.jpg"
+                },
+                "userSurvey": {
+                    "question1": {
+                        "text": "What is your primary motivation for buying sneakers?",
+                        "responses": [
+                            {
+                                "option": "Collecting/Reselling",
+                                "percentage": 42
+                            },
+                            {
+                                "option": "Fashion/Style",
+                                "percentage": 40
+                            },
+                            {
+                                "option": "Comfort/Performance",
+                                "percentage": 18
+                            }
+                        ]
+                    },
+                    "question2": {
+                        "text": "What features do you value most in a sneaker shopping app?",
+                        "responses": [
+                            {
+                                "option": "Fair Raffles",
+                                "percentage": 53
+                            },
+                            {
+                                "option": "Transparent Release Calendars",
+                                "percentage": 31
+                            },
+                            {
+                                "option": "Personalized Alerts",
+                                "percentage": 16
+                            }
+                        ]
+                    },
+                    "question3": {
+                        "text": "How do you prefer to pay for sneakers?",
+                        "responses": [
+                            {
+                                "option": "UPI",
+                                "percentage": 68
+                            },
+                            {
+                                "option": "Credit/Debit Card",
+                                "percentage": 24
+                            },
+                            {
+                                "option": "Cash on Delivery",
+                                "percentage": 8
+                            }
+                        ]
+                    },
+                    "question4": {
+                        "text": "What challenges do you face when buying limited edition sneakers?",
+                        "responses": [
+                            {
+                                "option": "Bots and unfair access",
+                                "percentage": 45
+                            },
+                            {
+                                "option": "High resale prices",
+                                "percentage": 27
+                            },
+                            {
+                                "option": "Limited payment options",
+                                "percentage": 15
+                            },
+                            {
+                                "option": "Poor customer service",
+                                "percentage": 13
+                            }
+                        ]
+                    },
+                    "question5": {
+                        "text": "How important is community engagement in your sneaker shopping experience?",
+                        "responses": [
+                            {
+                                "option": "Very Important",
+                                "percentage": 47
+                            },
+                            {
+                                "option": "Somewhat Important",
+                                "percentage": 36
+                            },
+                            {
+                                "option": "Not Important",
+                                "percentage": 17
+                            }
+                        ]
+                    }
+                },
+                "userInterview": {
+                    "interview1": {
+                        "name": "Aarav (Collector)",
+                        "profesion": 26,
+                        "location": "Mumbai, India",
+                        "insights": "I want proof the raffle is fair—show me how you pick winners."
+                    },
+                    "interview2": {
+                        "name": "Sara (Creator)",
+                        "profesion": 24,
+                        "location": "Delhi, India",
+                        "insights": "I need a calendar that respects my size and brand preferences."
+                    },
+                    "interview3": {
+                        "name": "Kabir (Casual buyer)",
+                        "profesion": 29,
+                        "location": "Bengaluru, India",
+                        "insights": "UPI refunds should be instant; I hate waiting days."
+                    }
+                }
+            },
+            "define": {
+                "userEmpathyMap": {
+                    "says": [
+                        "Give me a fair chance without bots.",
+                        "Just show all drops in one place.",
+                        "Notify me only for my size and brands."
+                    ],
+                    "thinks": [
+                        "Are raffles actually random?",
+                        "If refunds are slow, I won’t try again.",
+                        "Creators I trust can vouch for authenticity."
+                    ],
+                    "does": [
+                        "Tracks drops on Instagram and Discord.",
+                        "Adds sizes to wishlists for alerts.",
+                        "Screenshots raffles as proof."
+                    ],
+                    "feels": [
+                        "Hype before drops.",
+                        "FOMO during limited releases.",
+                        "Relief after smooth purchase."
+                    ]
+                },
+                "userPersona": [
+                    {
+                        "name": "Ishaan",
+                        "age": 25,
+                        "location": "Mumbai, India",
+                        "profession": "Graphic Designer",
+                        "goals": [
+                            "Secure limited drops at retail.",
+                            "Join a trusted sneaker community.",
+                            "Get instant UPI refunds on cancellations."
+                        ],
+                        "frustrations": [
+                            "Unfair raffles with no visibility.",
+                            "Cluttered alerts not tailored by size.",
+                            "Slow, opaque refund timelines."
+                        ],
+                        "needs": [
+                            "Provably fair raffles.",
+                            "Size- and brand-based personalization.",
+                            "UPI-first checkout and refunds."
+                        ]
+                    },
+                    {
+                        "name": "Meera",
+                        "age": 28,
+                        "location": "Delhi, India",
+                        "profession": "Software Engineer",
+                        "goals": [
+                            "Stay ahead of release dates.",
+                            "Streamlined purchase and returns.",
+                            "Connect with creators and local events."
+                        ],
+                        "frustrations": [
+                            "Multiple tabs to track drops.",
+                            "Payment failures during high demand.",
+                            "Lack of verified seller signals."
+                        ],
+                        "needs": [
+                            "Unified release calendar.",
+                            "Resilient checkout with retries.",
+                            "Verified seller and legit-check flows."
+                        ]
+                    }
+                ],
+                "userJourneyMap": {
+                    "awareness": {
+                        "touchpoints": [
+                            "IG Reels",
+                            "Creator collabs",
+                            "Boutique posts"
+                        ],
+                        "actions": [
+                            "See drop teaser",
+                            "Click to calendar",
+                            "Install app"
+                        ],
+                        "emotions": [
+                            "Curiosity",
+                            "Excitement"
+                        ]
+                    },
+                    "consideration": {
+                        "touchpoints": [
+                            "App store",
+                            "Discord servers",
+                            "YouTube reviews"
+                        ],
+                        "actions": [
+                            "Scan features",
+                            "Filter releases by size",
+                            "Set alerts"
+                        ],
+                        "emotions": [
+                            "Hope",
+                            "Caution"
+                        ]
+                    },
+                    "purchase": {
+                        "touchpoints": [
+                            "Raffle screen",
+                            "Checkout",
+                            "Payment gateway"
+                        ],
+                        "actions": [
+                            "Enter raffle",
+                            "Win/lose notification",
+                            "UPI payment"
+                        ],
+                        "emotions": [
+                            "Anxiety",
+                            "Relief"
+                        ]
+                    },
+                    "post-purchase": {
+                        "touchpoints": [
+                            "Order tracking",
+                            "Support chat",
+                            "Community feed"
+                        ],
+                        "actions": [
+                            "Track shipment",
+                            "Share W",
+                            "Rate experience"
+                        ],
+                        "emotions": [
+                            "Satisfaction",
+                            "Pride"
+                        ]
+                    }
+                },
+                "mosCow": {
+                    "mustHave": [
+                        "Provably fair raffles",
+                        "Release calendar",
+                        "UPI-first checkout"
+                    ],
+                    "shouldHave": [
+                        "Personalized alerts",
+                        "Creator/community features",
+                        "Rapid refunds"
+                    ],
+                    "couldHave": [
+                        "Members-only drops",
+                        "Badges and status",
+                        "Loyalty tiers"
+                    ],
+                    "won'tHave": [
+                        "Unverified sellers",
+                        "Manual bank transfers",
+                        "Opaque draw logic"
+                    ]
+                }
+            },
+            "ideate": {
+                "brainstorming": [
+                    "Merkle-proof raffle draws with public seed and audit page.",
+                    "Smart alerts tied to size, price ceiling, and colorways.",
+                    "Express UPI refunds with real-time status.",
+                    "Creator-curated collections and AMAs."
+                ],
+                "sketches": [
+                    {
+                        "title": "Initial Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-1.jpg",
+                        "comments": {
+                            "comment1": "Raffle card shows odds and entries left.",
+                            "comment2": "One-tap UPI with fallback to cards/BNPL.",
+                            "comment3": "Personalize by size and favorite brands."
+                        },
+                        "description": "Skeleton of raffle + calendar hybrid home."
+                    },
+                    {
+                        "title": "User Flow Diagram",
+                        "image": "/assets/images/case-studies/user-flow-1.jpg",
+                        "comments": {
+                            "comment1": "Entry → draw → outcome → checkout.",
+                            "comment2": "Refund path visualized for cancellations."
+                        },
+                        "description": "End-to-end path for drop participation."
+                    },
+                    {
+                        "title": "Feature Prioritization Matrix",
+                        "image": "/assets/images/case-studies/feature-matrix-1.jpg",
+                        "comments": {
+                            "comment1": "Prioritize raffle fairness and checkout resilience.",
+                            "comment2": "Defer social feed to post-MVP.",
+                            "comment3": "Calendar filters high impact, low effort.",
+                            "comment4": "Add ‘instant refund’ as differentiator."
+                        },
+                        "description": "MVP definition with impact/effort mapping."
+                    }
+                ],
+                "storyBoard": {
+                    "title": "User Storyboard",
+                    "scenes": [
+                        {
+                            "scene": "Discovery via creator teaser",
+                            "description": "User taps from IG story to app calendar.",
+                            "image": "/assets/images/case-studies/storyboard-1.jpg"
+                        },
+                        {
+                            "scene": "Raffle entry with visible odds",
+                            "description": "User reviews fair-draw details and enters.",
+                            "image": "/assets/images/case-studies/storyboard-2.jpg"
+                        },
+                        {
+                            "scene": "Win and UPI-first checkout",
+                            "description": "One-tap UPI completes purchase.",
+                            "image": "/assets/images/case-studies/storyboard-3.jpg"
+                        },
+                        {
+                            "scene": "Share and engage",
+                            "description": "User posts W to community feed.",
+                            "image": "/assets/images/case-studies/storyboard-4.jpg"
+                        }
+                    ]
+                },
+                "wireframes": [
+                    {
+                        "title": "Raffle Flow Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-raffle.jpg",
+                        "description": "Displays entries, odds, and anti-bot checks."
+                    },
+                    {
+                        "title": "Release Calendar Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-calendar.jpg",
+                        "description": "Filter by size, brand, price, and city events."
+                    },
+                    {
+                        "title": "UPI Checkout Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-checkout.jpg",
+                        "description": "UPI intent + fallback with retry logic."
+                    },
+                    {
+                        "title": "Community Features Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-community.jpg",
+                        "description": "Badges, creator drops, and verified showcases."
+                    },
+                    {
+                        "title": "Personalized Alerts Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-alerts.jpg",
+                        "description": "Granular alert rules for size, colorway, price."
+                    },
+                    {
+                        "title": "Anti-Bot Measures Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-anti-bot.jpg",
+                        "description": "Device fingerprinting and queue throttling."
+                    },
+                    {
+                        "title": "User Profile Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-profile.jpg",
+                        "description": "Sizes, wishlist, purchase history, badges."
+                    },
+                    {
+                        "title": "Sneaker Detail Page Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-detail.jpg",
+                        "description": "Materials, sizing, release rules, price graph."
+                    },
+                    {
+                        "title": "Order History Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-order-history.jpg",
+                        "description": "Refund states and delivery timeline."
+                    },
+                    {
+                        "title": "Feedback and Support Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-feedback.jpg",
+                        "description": "24×7 chat + dispute center."
+                    },
+                    {
+                        "title": "Settings Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-settings.jpg",
+                        "description": "Payment preferences and privacy controls."
+                    },
+                    {
+                        "title": "Notifications Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-notifications.jpg",
+                        "description": "Digest vs. instant alerts configuration."
+                    },
+                    {
+                        "title": "Wishlist Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-wishlist.jpg",
+                        "description": "Ranked wishlist with restock probabilities."
+                    },
+                    {
+                        "title": "Search Functionality Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-search.jpg",
+                        "description": "Synonyms and typo-tolerance for colorways."
+                    },
+                    {
+                        "title": "Social Sharing Wireframe",
+                        "image": "/assets/images/case-studies/wireframe-social.jpg",
+                        "description": "Auto-generate shareable W/L cards."
+                    }
+                ],
+                "informationArchitecture": {
+                    "siteMap": {
+                        "home": {
+                            "raffles": "Raffle listings and details",
+                            "calendar": "Release calendar",
+                            "community": "Community features and discussions",
+                            "profile": "User profile and settings"
+                        },
+                        "raffleDetails": {
+                            "entryForm": "Raffle entry form",
+                            "results": "Raffle results and winner announcements"
+                        },
+                        "sneakerDetails": {
+                            "description": "Sneaker information and images",
+                            "purchaseOptions": "Purchase options and payment methods"
+                        },
+                        "communityFeatures": {
+                            "forums": "Discussion forums",
+                            "events": "Upcoming events and meetups"
+                        }
+                    }
+                }
+            },
+            "design": {
+                "styleGuide": {
+                    "personality": "Sole Hub speaks like a plugged-in friend—clear, confident, and hype without the fluff. We prioritize trust and simplicity so limited drops feel fair and fun.",
+                    "keywords": [
+                        "Direct",
+                        "Approachable",
+                        "Transparent",
+                        "Confident",
+                        "Empowering"
+                    ],
+                    "tone": "Straightforward, friendly, and helpful. We avoid jargon and explain fairness and policies in plain language.",
+                    "sampleCopy": [
+                        {
+                            "title": "Welcome Message",
+                            "text": "Welcome to Sole Hub—your fair shot at every drop."
+                        },
+                        {
+                            "title": "Error Message",
+                            "text": "That didn’t go through. Your spot is safe—try again in a moment."
+                        },
+                        {
+                            "title": "Success Message",
+                            "text": "Win secured. Checkout with UPI to lock it in."
+                        }
+                    ],
+                    "visualStyle": {
+                        "colors": [
+                            {
+                                "name": "Primary Color",
+                                "hex": "#111827"
+                            },
+                            {
+                                "name": "Secondary Color",
+                                "hex": "#2563EB"
+                            },
+                            {
+                                "name": "Accent Color",
+                                "hex": "#F59E0B"
+                            }
+                        ],
+                        "typography": [
+                            {
+                                "fontFamily": "'Inter', sans-serif",
+                                "fontSize": "16px",
+                                "lineHeight": "1.6"
+                            },
+                            {
+                                "fontFamily": "'Urbanist', sans-serif",
+                                "fontSize": "14px",
+                                "lineHeight": "1.5"
+                            },
+                            {
+                                "fontFamily": "'Space Grotesk', sans-serif",
+                                "fontSize": "18px",
+                                "lineHeight": "1.6"
+                            },
+                            {
+                                "fontFamily": "'Montserrat', sans-serif",
+                                "fontSize": "20px",
+                                "lineHeight": "1.8"
+                            }
+                        ],
+                        "iconography": {
+                            "style": "Flat",
+                            "examples": [
+                                "/assets/icons/icon1.svg",
+                                "/assets/icons/icon2.svg",
+                                "/assets/icons/icon3.svg",
+                                "/assets/icons/icon4.svg"
+                            ]
+                        }
+                    },
+                    "iconography": {
+                        "solid": {
+                            "name": "Solid Icons",
+                            "examples": [
+                                "/assets/icons/icon1.svg",
+                                "/assets/icons/icon2.svg",
+                                "/assets/icons/icon3.svg",
+                                "/assets/icons/icon4.svg",
+                                "/assets/icons/icon5.svg",
+                                "/assets/icons/icon6.svg",
+                                "/assets/icons/icon7.svg",
+                                "/assets/icons/icon8.svg",
+                                "/assets/icons/icon9.svg",
+                                "/assets/icons/icon10.svg",
+                                "/assets/icons/icon11.svg",
+                                "/assets/icons/icon12.svg"
+                            ]
+                        },
+                        "outline": {
+                            "name": "Outline Icons",
+                            "examples": [
+                                "/assets/icons/outline-icon1.svg",
+                                "/assets/icons/outline-icon2.svg",
+                                "/assets/icons/outline-icon3.svg",
+                                "/assets/icons/outline-icon4.svg",
+                                "/assets/icons/outline-icon5.svg",
+                                "/assets/icons/outline-icon6.svg",
+                                "/assets/icons/outline-icon7.svg",
+                                "/assets/icons/outline-icon8.svg",
+                                "/assets/icons/outline-icon9.svg",
+                                "/assets/icons/outline-icon10.svg"
+                            ]
+                        }
+                    },
+                    "logo": {
+                        "name": "Sole Hub Logo",
+                        "image": "/assets/images/logos/solehub-logo.png",
+                        "description": "A clean wordmark with angular cuts, hinting at speed and scarcity."
+                    },
+                    "brandAssets": [
+                        {
+                            "name": "Sole Hub Logo",
+                            "image": "/assets/images/logos/solehub-logo.png",
+                            "description": "Primary dark variant for app and web."
+                        },
+                        {
+                            "name": "Sole Mark",
+                            "image": "/assets/icons/sole-mark.svg",
+                            "description": "Compact icon for badges and app icon."
+                        }
+                    ],
+                    "designSystem": {
+                        "components": [
+                            {
+                                "name": "Button",
+                                "description": "Primary CTAs for raffle and checkout.",
+                                "image": "/assets/images/components/button.png",
+                                "styles": {
+                                    "backgroundColor": "#2563EB",
+                                    "textColor": "#FFFFFF",
+                                    "borderRadius": "8px",
+                                    "padding": "12px 20px"
+                                },
+                                "variants": [
+                                    {
+                                        "name": "Primary",
+                                        "styles": {
+                                            "backgroundColor": "#2563EB",
+                                            "textColor": "#FFFFFF"
+                                        },
+                                        "image": "/assets/images/components/button-primary.png"
+                                    },
+                                    {
+                                        "name": "Secondary",
+                                        "styles": {
+                                            "backgroundColor": "#111827",
+                                            "textColor": "#FFFFFF"
+                                        },
+                                        "image": "/assets/images/components/button-secondary.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Card",
+                                "description": "Raffle and drop preview tiles.",
+                                "image": "/assets/images/components/card.png",
+                                "styles": {
+                                    "backgroundColor": "#0B1220",
+                                    "textColor": "#E5E7EB",
+                                    "borderRadius": "12px",
+                                    "padding": "16px"
+                                },
+                                "variants": [
+                                    {
+                                        "name": "Raffle",
+                                        "styles": {
+                                            "backgroundColor": "#0B1220",
+                                            "textColor": "#E5E7EB"
+                                        },
+                                        "image": "/assets/images/components/card-raffle.png"
+                                    },
+                                    {
+                                        "name": "Calendar",
+                                        "styles": {
+                                            "backgroundColor": "#0E1726",
+                                            "textColor": "#E5E7EB"
+                                        },
+                                        "image": "/assets/images/components/card-calendar.png"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Input",
+                                "description": "Forms and search fields.",
+                                "image": "/assets/images/components/input.png",
+                                "styles": {
+                                    "backgroundColor": "#111827",
+                                    "textColor": "#F9FAFB",
+                                    "borderRadius": "8px",
+                                    "padding": "10px 12px"
+                                },
+                                "variants": [
+                                    {
+                                        "name": "Default",
+                                        "styles": {
+                                            "backgroundColor": "#111827",
+                                            "textColor": "#F9FAFB"
+                                        },
+                                        "image": "/assets/images/components/input-default.png"
+                                    },
+                                    {
+                                        "name": "With Icon",
+                                        "styles": {
+                                            "backgroundColor": "#111827",
+                                            "textColor": "#F9FAFB"
+                                        },
+                                        "image": "/assets/images/components/input-icon.png"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

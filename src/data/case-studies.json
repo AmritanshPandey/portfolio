@@ -1,0 +1,20 @@
+{
+    "caseStudies": [
+        {
+            "id": 1,
+            "banner": "/assets/images/caseStudies/solehub/solehub-banner.png",
+            "thumbnail": "/assets/images/case-studies/thumbnail-1.jpg",
+            "title": "Sole Hub",
+            "timeline": "7 months",
+            "challenge": "India's sneaker scene is vibrant yet scattered across brand sites, boutique raffles, and resale groups. Users struggle with discovering drops, verifying authenticity, and navigating clunky checkouts. Sole Hub aims to centralize the experience with fair raffles, a transparent release calendar, UPI-first payments, personalization, and strong anti-bot defenses.",
+            "goal": [
+                "Fair Access: Design verifiable, bot-resistant raffles and drop flows.",
+                "Personalization: Tailor alerts and curation by size, preferences, and history.",
+                "Seamless Checkout: Lead with UPI, support cards/EMI, and enable fast refunds.",
+                "Community & Exclusivity: Build perks—early access, members-only content, and creator-led drops.",
+                "Scalability: Optimize for patchy networks and low-end devices across Tier-1 to Tier-3 cities."
+            ]
+          
+        }
+    ]
+}

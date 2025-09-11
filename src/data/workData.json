@@ -2,13 +2,43 @@
   {
     "id": 1,
     "title": "UX Case Studies",
-    "description": "A UX case study focused on solving user problems through design, testing, and development.",
-    "image": "/images/workcard.png"
+    "description": "A UX case study focused on solving user problems through design, testing and development.",
+    "image": "/assets/images/workcard.png",
+    "url": "/case-studies"
   },
   {
     "id": 2,
     "title": "Lean UX Projects",
-    "description": "Quick UX projects that emphasize fast thinking, clear problem-solving, and purposeful design.",
-    "image": "/images/workcard.png"
+    "description": "Quick design sprints that emphasize speed, problem-solving, and purposeful user experiences.",
+    "image": "/assets/images/workcard.png",
+    "url": "/lean-ux"
+  },
+  {
+    "id": 3,
+    "title": "AI-Driven Projects",
+    "description": "Solutions powered by machine learning, automation, and generative AI to enhance interactions.",
+    "image": "/assets/images/workcard.png",
+    "url": "/ai-projects"
+  },
+  {
+    "id": 4,
+    "title": "User Interface",
+    "description": "A collection of reusable UI patterns and components designed for consistency and scalability.",
+    "image": "/assets/images/workcard.png",
+    "url": "/ui-systems"
+  },
+  {
+    "id": 5,
+    "title": "Design Systems",
+    "description": "Cohesive design systems built for consistency, scalability, and seamless collaboration across products.",
+    "image": "/assets/images/workcard.png",
+    "url": "/design-systems"
+  },
+  {
+    "id": 6,
+    "title": "Beyond Interfaces",
+    "description": "Exploring graphic design, 3D assets, and visual storytelling that bring depth and creativity to digital experiences.",
+    "image": "/assets/images/workcard.png",
+    "url": "/beyond-interfaces"
   }
 ]

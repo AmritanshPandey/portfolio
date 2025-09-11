@@ -2,11 +2,10 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-        {/* Google Fonts manual import */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
       </Head>

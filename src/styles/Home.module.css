@@ -1,44 +1,51 @@
 .heroContainer {
-  position: relative;
-  overflow: hidden;
-  border-radius: 120px;
-  padding: 180px 150px 120px;
-  display: flex;
-  justify-content: space-between;
-  background: radial-gradient(circle at 30% 30%, #452d65, transparent 40%),
-              radial-gradient(circle at 70% 70%, #000000, transparent 40%),
-              linear-gradient(140deg, #000000 0%, #0a0a0a 25%, #2d3956 50%, #8c6bb8 77%, #e9a1b2 100%);
-  background-blend-mode: screen;
-  animation: auroraMove 20s ease-in-out infinite alternate;
-  margin: 48px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding: 200px 200px;
+    justify-content: space-between;
+    background:
+        /* vertical ribs */
+        repeating-linear-gradient(90deg,
+            rgba(110, 110, 110, 0.067) 0 1.4px,
+            rgba(255, 255, 255, 0) 1.4px 32px),
+        /* highlight arc */
+        radial-gradient(900px 420px at 15% 35%, rgba(255, 150, 32, 0.55), transparent 45%),
+        radial-gradient(1000px 500px at 60% 20%, rgba(255, 230, 180, 0.55), transparent 45%),
+        /* main gradient */
+        linear-gradient(120deg,
+            #f26a00 0%,
+            #f6c864 33%,
+            #ffffff 48%,
+            #9fd8ff 70%,
+            #0c2b75 100%);
+    background-blend-mode: normal;
 }
 
 
-@keyframes auroraMove {
-  0% {
-    background-position: 0% 0%, 100% 100%, 50% 50%;
-  }
-  100% {
-    background-position: 100% 0%, 0% 100%, 50% 50%;
-  }
-}
+
 .heroContainer::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(-surface-black);
+    background: var(--surface-black);
     filter: url(#noiseFilter);
     opacity: 1;
     mix-blend-mode: overlay;
     pointer-events: none;
 }
 
+
 .heroContent {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    color: var(--white-text);
+    color: var(--black-text);
 }
+
+
+
+
 
 .heroDescription {
     display: flex;
@@ -53,13 +60,97 @@
     gap: 12px;
 }
 
+
+
+.glass-card {
+    width: 240px;
+    height: 360px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+}
+
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
+}
+
+
 .heroSkills {
-    background-color: var(--surface-grey);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
     color: var(--black-text);
     padding: 8px 16px;
-    border-radius: 16px;
     font-size: 14px;
     font-weight: 500;
+}
+
+
+
+.heroSkills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+}
+
+.heroSkills::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
 }
 
 

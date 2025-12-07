@@ -10,9 +10,9 @@
 :root {
 
     /*Surface Color */
-    --surface-light: #fdf1f1;
-    --surface-grey: #FFE8EB;
-    --surface-dark: #e9a1b2;
+    --surface: #F8F6ED;
+    --surface-light: #F7DFA3;
+    --surface-dark: #EFA45A;
     --surface-black: #141414;
     --yellow-stikcy: #FFF6C8;
     --green-stikcy: #E0FFC8;
@@ -22,11 +22,12 @@
     --red-stikcy: #FFC8C8;
 
     /* Text Colors */
-    --black-text: #141414;
-    --grey-text: #706C61;
-    --primary-text: #8C6BB8;
-    --white-text: #FFFCF1;
-    --hover-text: #E9A1B2;
+    --primary-text: #141414;
+    --secondary-text: #4A4A4A;
+    --tertiary-text: #706C61;
+    --inverted-text: #FFFCF1;
+    --hover-text: #DA6A1C;
+    --button-text: #DA6A1C;
     --yellow-stikcy-text: #84793F;
     --green-stikcy-text: #5D843F;
     --teal-stikcy-text: #3E8473;
@@ -161,7 +162,7 @@ h4 {
 
 h5 {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
 }
 

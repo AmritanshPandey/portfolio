@@ -1,4 +1,5 @@
 import styles from '../../styles/Home.module.css';
+import Tags from '../global/Tags';
 
 
 
@@ -12,18 +13,18 @@ export default function Hero() {
                 </div>
                 <div className={styles.heroDescription}>
                     <span className='subheading'>UX/UI designer-developer crafting accessible, high-polish product experiences—from rapid Lean UX to robust design systems and AI-powered features.</span>
-                    <span className='body-semibold'>Currently designing at Mastercard · 6+ years of experience</span>
+                    <span className='subheading text-bold'>Currently designing at Mastercard · 6+ years of experience</span>
                 </div>
 
 
 
-                <div className={styles.heroSkillsContainer}>
-                    <div className={styles.heroSkills}><span>UX Strategy</span></div>
-                    <div className={styles.heroSkills}><span>UI/Visual Design</span></div>
-                    <div className={styles.heroSkills}><span>Interaction Design</span></div>
-                    <div className={styles.heroSkills}><span>Design Systems</span></div>
-                    <div className={styles.heroSkills}><span>Front-end Dev</span></div>
-                    <div className={styles.heroSkills}><span>AI Integration</span></div>
+                <div className="flex flex-row flex-wrap gap-2">
+                    <Tags title="UX Strategy" />
+                    <Tags title="UI/Visual Design" />
+                    <Tags title="Interaction Design" />
+                    <Tags title="Design Systems" />
+                    <Tags title="Front-end Dev" />
+                    <Tags title="AI Integration" />
 
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>

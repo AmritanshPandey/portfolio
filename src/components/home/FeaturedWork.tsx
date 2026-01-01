@@ -1,33 +1,68 @@
-import styles from '../../styles/Home.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import BentoCard from "../global/Cards/BentoCard"
+import SectionTitle from "../global/SectionTitle"
+import Tags from "../global/Tags"
 
-type WorkCardProps = {
-    title: string;
-    description: string;
-    image: string;
-    url: string;
-};
 
-export default function WorkCard({ title, description, image, url }: WorkCardProps) {
+function FeaturedWork() {
     return (
-        <div className={styles.workCard}>
-            <Image
-                src={image}
-                alt={title}
-                width={300}
-                height={300}
-                className={styles.workCardImage}
+        <section className="featured-work padding-page">
+            <SectionTitle
+                title="Featured Work"
+                actionLabel="Explore All"
+                actionHref="/work/case-studies"
             />
-            <div className={styles.workCardContent}>
-                <h4>{title}</h4>
-                <p>{description}</p>
-                <Link href={url} className={styles.workCardButton}>
-                    <span className="text-button">View Details</span>
-                    <ArrowRightIcon className="icon-base" />
-                </Link>
-            </div>
-        </div>
-    );
+
+            <section className="flex flex-col gap-6 margin-top-lg">
+                <div className="flex flex-row gap-6 flex-40-60">
+                    <BentoCard
+                        items={[
+                            {
+                                title: "UX Case Studies",
+                                image: "/assets/images/bento1.png",
+                                size: "bento-lg",
+                                tags: ["UX Strategy", "UI Design"]
+                            }
+                        ]}
+                    />
+                    <BentoCard
+                        items={[
+                            {
+                                title: "UX Case Studies",
+                                image: "/assets/images/bento3.png",
+                                size: "bento-lg",
+                                tags: ["UX Strategy", "UI Design", "Interaction Design"]
+                            }
+                        ]}
+                    />
+
+                </div>
+                <div className="flex flex-row gap-6 flex-50-50">
+                    <BentoCard
+                        items={[
+                            {
+                                title: "UX Case Studies",
+                                image: "/assets/images/bento4.png",
+                                size: "bento-lg",
+                                tags: ["UX Strategy", "UI Design"]
+                            }
+                        ]}
+                    />
+                    <BentoCard
+                        items={[
+                            {
+                                title: "UX Case Studies",
+                                image: "/assets/images/bento2.png",
+                                size: "bento-lg",
+                                tags: ["UX Strategy", "UI Design", "Interaction Design"]
+                            }
+                        ]}
+                    />
+
+                </div>
+
+            </section>
+        </section>
+    )
 }
+
+export default FeaturedWork

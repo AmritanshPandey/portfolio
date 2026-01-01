@@ -160,7 +160,7 @@ Spacing & Radius
     --padding-xxl: 56px;
     --padding-xxxl: 72px;
     --padding-xxxxl: 128px;
-    --padding-page: 200px;
+    --padding-page: 56px 200px;
 
     --padding-top-xs: 8px;
     --padding-top-sm: 12px;
@@ -170,7 +170,7 @@ Spacing & Radius
     --padding-top-xxl: 56px;
     --padding-top-xxxl: 72px;
     --padding-top-xxxxl: 128px;
-    --padding-top-page: 200px;
+    --padding-top-page: 56px;
 
     --padding-bottom-xs: 8px;
     --padding-bottom-sm: 12px;
@@ -180,7 +180,7 @@ Spacing & Radius
     --padding-bottom-xxl: 56px;
     --padding-bottom-xxxl: 72px;
     --padding-bottom-xxxxl: 128px;
-    --padding-bottom-page: 200px;
+    --padding-bottom-page: 56px;
 
 
     /*Gap*/
@@ -217,12 +217,14 @@ Spacing & Radius
 .grey-color {
     color: var(--secondary-text);
 }
+
 .highlight-color {
     color: var(--black);
 }
 
 .highlight-color:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .light-grey-color {
@@ -245,8 +247,16 @@ Spacing & Radius
     background-color: var(--surface-black);
 }
 
+.bg-orange {
+    background: var(--primary-color);
+}
 
-.glass-background {
+.bg-yellow {
+    background: var(--secondary-accent-color);
+}
+
+
+.glass-background-light {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -257,6 +267,26 @@ Spacing & Radius
         inset 0 1px 0 rgba(255, 255, 255, 0.5),
         inset 0 -1px 0 rgba(255, 255, 255, 0.1),
         inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+}
+
+.glass-background-dark {
+    background: rgba(62, 62, 62, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(193, 193, 193, 0.3);
+    box-shadow:
+        0 8px 32px rgba(80, 80, 80, 0.1),
+        inset 0 1px 0 rgba(164, 164, 164, 0.5),
+        inset 0 -1px 0 rgba(206, 206, 206, 0.1),
+        inset 0 0 8px 4px rgba(206, 206, 206, 0.4);
+}
+
+.black-gradient-bg {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0) 70%);
 }
 
 .shadow-xs {
@@ -340,11 +370,82 @@ a {
     color: inherit;
 }
 
+.btn-text {
+    font-size: var(--font-size-base);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-text:hover {
+    color: var(--primary-accent-color);
+    cursor: pointer;
+}
+
+.text-bold {
+    font-weight: var(--fw-bold);
+}
+
 
 /* ==========================================================================
-GRIDS & CONTAINERS
+BENTO GRID
 ========================================================================== */
+.bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
 
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Background image */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+/* Contrast overlay */
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+
+}
+
+/* Content layer */
+.card-content {
+    position: absolute;
+    bottom: 0px;
+    padding: 24px;
+    width: 100%;
+    color: var(--white);
+    z-index: 1;
+
+}
+
+/* Large */
+.bento-lg {
+    min-height: 512px;
+}
+
+/* Medium */
+.bento-md {
+    min-height: 364px;
+}
+
+s
+
+/* Small */
+.bento-sm {
+    min-height: 256px;
+}
 
 /* ==========================================================================
 MARGIN & PADDING
@@ -396,64 +497,81 @@ MARGIN & PADDING
 
 .margin-top-reset {
     margin-top: 0;
-}   
+}
 
 .margin-top-xs {
     margin-top: var(--margin-top-xs);
 }
+
 .margin-top-sm {
     margin-top: var(--margin-top-sm);
 }
+
 .margin-top-md {
     margin-top: var(--margin-top-md);
 }
+
 .margin-top-lg {
     margin-top: var(--margin-top-lg);
 }
+
 .margin-top-xl {
     margin-top: var(--margin-top-xl);
 }
+
 .margin-top-xxl {
     margin-top: var(--margin-top-xxl);
 }
+
 .margin-top-xxxl {
     margin-top: var(--margin-top-xxxl);
 }
+
 .margin-top-xxxxl {
     margin-top: var(--margin-top-xxxxl);
 }
+
 .margin-top-page {
     margin-top: var(--margin-top-page);
-}   
+}
 
-/*Margin Bottom*/       
+/*Margin Bottom*/
 .margin-bottom-reset {
     margin-bottom: 0;
 }
+
 .margin-bottom-xs {
     margin-bottom: var(--margin-bottom-xs);
 }
+
 .margin-bottom-sm {
     margin-bottom: var(--margin-bottom-sm);
 }
+
 .margin-bottom-md {
     margin-bottom: var(--margin-bottom-md);
 }
+
 .margin-bottom-lg {
     margin-bottom: var(--margin-bottom-lg);
 }
+
 .margin-bottom-xl {
     margin-bottom: var(--margin-bottom-xl);
 }
+
 .margin-bottom-xxl {
     margin-bottom: var(--margin-bottom-xxl);
 }
+
 .margin-bottom-xxxl {
     margin-bottom: var(--margin-bottom-xxxl);
 }
+
 .margin-bottom-xxxxl {
     margin-bottom: var(--margin-bottom-xxxxl);
 }
+
 .margin-bottom-page {
     margin-bottom: var(--margin-bottom-page);
 }
@@ -629,6 +747,40 @@ FLEX
     flex: none;
 }
 
+/* 70 / 30 */
+.flex-70-30> :first-child {
+    flex: 7;
+}
+
+.flex-70-30> :last-child {
+    flex: 3;
+}
+
+/* 40 / 60 */
+.flex-40-60> :first-child {
+    flex: 4;
+}
+
+.flex-40-60> :last-child {
+    flex: 6;
+}
+
+/* 50 / 50 */
+.flex-50-50>* {
+    flex: 1;
+}
+
+/* 20 / 80 */
+.flex-20-80> :first-child {
+    flex: 2;
+}
+
+.flex-20-80> :last-child {
+    flex: 8;
+}
+
+
+
 .center {
     display: flex;
     align-items: center;
@@ -743,14 +895,17 @@ IMAGES
 
 .img-hover-zoom {
     overflow: hidden;
+    cursor: pointer;
 }
 
 .img-hover-zoom img {
     transition: transform 0.4s ease;
+    cursor: pointer;
 }
 
 .img-hover-zoom:hover img {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .avatar {
@@ -821,6 +976,11 @@ img {
     height: auto;
 }
 
+
+/* ==========================================================================
+GLOBAL COMPONENT STYLES
+========================================================================== */
+
 .text-button {
     cursor: pointer;
     background-color: none;
@@ -842,6 +1002,70 @@ img {
     border: none;
     cursor: pointer;
 }
+
+.tag {
+  white-space: nowrap;
+}
+
+.tags {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    color: var(--black-text);
+    padding: 8px 16px;
+    font-size: var(--font-size-sm);
+    font-weight: var(--fw-medium);
+    width: fit-content;
+    flex: 0 0 auto;
+    min-width: auto;
+     max-width: 100%;
+}
+
+
+.tags::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+    cursor: pointer;
+}
+
+.tags::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
+}
+
+
+.tags:hover {
+    box-shadow: var(--shadow-lg);
+    background-color: var(--surface);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 
 /* Responsive Typography and Layout */
 

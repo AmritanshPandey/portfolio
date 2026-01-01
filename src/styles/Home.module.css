@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     display: flex;
-    padding: 120px 200px;
+    padding: 200px 200px 120px;
     justify-content: space-between;
     background:
         /* vertical ribs */
@@ -50,85 +50,11 @@
 .heroDescription {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 48px;
     width: 80%;
 }
 
 
-.heroSkillsContainer{
-  display: flex;
-  flex-wrap: wrap;       
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.heroSkillsContainer > * {
-  box-sizing: border-box;
-  flex: 1 1 clamp(140px, 18%, 220px);
-  min-width: 120px; /* safety */
-  max-width: 1fr;
-}
-
-.heroSkills {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
-    position: relative;
-    overflow: hidden;
-    color: var(--black-text);
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 500;
-    width: fit-content;
-    flex: 0 0 auto;
-    min-width: auto;
-    max-width: auto;
-}
-
-
-
-.heroSkills::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(255, 255, 255, 0.8),
-            transparent);
-}
-
-.heroSkills::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(180deg,
-            rgba(255, 255, 255, 0.8),
-            transparent,
-            rgba(255, 255, 255, 0.3));
-}
-
-
-.heroSkills:hover {
-    box-shadow:
-        0 12px 48px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 0 12px 6px rgba(255, 255, 255, 0.5);
-        background-color: var(--surface);
-}
 
 
 

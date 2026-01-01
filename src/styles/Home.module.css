@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     display: flex;
-    padding: 200px 200px;
+    padding: 120px 200px;
     justify-content: space-between;
     background:
         /* vertical ribs */
@@ -13,16 +13,14 @@
         radial-gradient(900px 420px at 15% 35%, rgba(255, 150, 32, 0.55), transparent 45%),
         radial-gradient(1000px 500px at 60% 20%, rgba(255, 230, 180, 0.55), transparent 45%),
         /* main gradient */
-        linear-gradient(120deg,
+        linear-gradient(45deg,
             #f26a00 0%,
-            #f6c864 33%,
-            #ffffff 48%,
-            #9fd8ff 70%,
+            #f6c864 25%,
+            #ffffff 45%,
+            #9fd8ff 75%,
             #0c2b75 100%);
     background-blend-mode: normal;
 }
-
-
 
 .heroContainer::before {
     content: "";
@@ -41,70 +39,35 @@
     flex-direction: column;
     gap: 24px;
     color: var(--black-text);
+    width: 100%;
 }
 
-
-
+.heroSubtitle {
+     width: 60%;
+}
 
 
 .heroDescription {
     display: flex;
-    gap: 16px;
     flex-direction: column;
+    gap: 16px;
+    width: 80%;
 }
 
 
-.heroSkillsContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+.heroSkillsContainer{
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 12px;
+  align-items: flex-start;
 }
 
-
-
-.glass-card {
-    width: 240px;
-    height: 360px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
-    position: relative;
-    overflow: hidden;
+.heroSkillsContainer > * {
+  box-sizing: border-box;
+  flex: 1 1 clamp(140px, 18%, 220px);
+  min-width: 120px; /* safety */
+  max-width: 1fr;
 }
-
-.glass-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(255, 255, 255, 0.8),
-            transparent);
-}
-
-.glass-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(180deg,
-            rgba(255, 255, 255, 0.8),
-            transparent,
-            rgba(255, 255, 255, 0.3));
-}
-
 
 .heroSkills {
     background: rgba(255, 255, 255, 0.15);
@@ -123,6 +86,10 @@
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
+    width: fit-content;
+    flex: 0 0 auto;
+    min-width: auto;
+    max-width: auto;
 }
 
 
@@ -154,321 +121,41 @@
 }
 
 
-
-
-/* Work Grid */
-
-.workContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    padding: 24px 200px;
-    background-color: var(--surface-light);
-}
-
-.workCard {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--surface-grey);
-    border-radius: 24px;
-}
-
-.workCardImage {
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    object-fit: cover;
-}
-
-.workCardContent {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.workContent {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.workCardContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 32px;
-    padding: 32px 0;
-}
-
-.workCardButton {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background: none;
-    border: none;
-    color: var(--primary-text);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s ease;
-    gap: 8px;
-}
-
-/* About Section */
-
-.aboutContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 200px;
-    gap: 24px;
-}
-
-.aboutContent {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    justify-content: space-between;
-}
-
-.aboutImage {
-    width: 600px;
-    height: 400px;
-    border-radius: 24px;
-    object-fit: cover;
-}
-
-.aboutText {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-/* Experience */
-
-.experienceContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--surface-grey);
-    padding: 24px 200px;
-    gap: 24px;
-}
-
-.tabHeader {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-bottom: 2px solid var(--surface-grey);
-}
-
-.tabButton {
-    background: none;
-    border: none;
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--grey-text);
-    padding: 16px 0;
-    cursor: pointer;
-    border-bottom: 3px solid transparent;
-    transition: color 0.2s ease, border-color 0.2s ease;
-    text-align: center;
-    width: 100%;
-}
-
-.tabButton:hover {
-    color: var(--primary-text);
-}
-
-.active {
-    color: var(--primary-text);
-    font-weight: 600;
-    border-bottom: 3px solid var(--primary-text);
-}
-
-
-.expCategory {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--grey-text);
-}
-
-.expCard {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-.expContent {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-}
-
-.expDetails {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.expDetails p {
-    color: var(--grey-text);
-}
-
-.expIcon {
-    width: 24px;
-    height: 24px;
-    color: var(--grey-text);
-}
-
-.expDetailContainer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.expDescriptionTitle {
-    font-weight: 600;
-    color: var(--black-text);
-}
-
-.expDescription {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.expDescription ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 8px;
-}
-
-.expDescription li {
-    margin-bottom: 4px;
-    line-height: 1.5;
+.heroSkills:hover {
+    box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 0 12px 6px rgba(255, 255, 255, 0.5);
+        background-color: var(--surface);
 }
 
 
 
-/* iPad (portrait) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {}
-
-/* iPad (landscape) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
-
-/* Phone (portrait) */
-@media (max-width: 480px) and (orientation: portrait) {
-
-    /* Hero Section */
+/* Mobile (portrait) */
+@media (max-width: 480px) {
     .heroContainer {
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        padding: 24px;
-        gap: 24px;
-    }
-
-    .heroContent {
-        padding: 0;
-        gap: 16px;
-        max-width: 100%;
-    }
-
-    .contactLink svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .heroImageContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .heroImage {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 24px;
-
-    }
-
-    /* Work Grid */
-
-    .workContainer {
-        display: flex;
-        flex-direction: column;
-        padding: 24px;
-        gap: 24px;
-        background-color: var(--surface-grey);
-    }
-
-    .workCard {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--surface-light);
-        border-radius: 24px;
-    }
-
-    .workCardImage {
-        width: 100%;
-        height: 200px;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
-        object-fit: cover;
-    }
-
-    .workCardContent {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .workContent {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .workCardContainer {
-        grid-template-columns: 1fr;
-        padding: 0;
-        gap: 24px;
-    }
-
-
-    /* About Section */
-
-    .aboutContainer {
-        display: flex;
-        flex-direction: column;
-        padding: 24px;
-        gap: 24px;
-    }
-
-    .aboutContent {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        justify-content: space-between;
-    }
-
-    .aboutImage {
-        width: 400px;
-        height: 400px;
-        border-radius: 24px;
-        object-fit: cover;
-    }
-
-    .aboutText {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
+        padding: 96px 48px;
     }
 
 }
 
-/* Phone (landscape) */
-@media (max-width: 768px) and (orientation: landscape) {}
+/* Mobile (landscape) & small tablets */
+@media (max-width: 768px) {
+    /* landscape phones, small tablets */
+}
+
+/* Tablets (portrait & landscape) */
+@media (max-width: 1024px) {
+    /* iPads, mid tablets */
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1280px) {
+    /* typical laptop screens */
+}
+
+/* Large desktops / monitors */
+@media (min-width: 1281px) {
+    /* large screen enhancement */
+}

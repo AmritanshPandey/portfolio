@@ -1,12 +1,16 @@
 import Header from './Header/Header';
 import Footer from './Footer';
 import { ReactNode } from 'react';
-import { Oxygen } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
-const oxygen = Oxygen({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['300', '400', '700'], // adjust as needed
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-montserrat'
 });
+
+
+export const metadata = { title: 'Portfolio' };
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,10 +18,10 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className={oxygen.className}>
+   <main className={montserrat.variable}>
       <Header />
       <main className="main-container">{children}</main>
       <Footer />
-    </div>
+    </main>
   );
 }

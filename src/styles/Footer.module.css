@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--surface-black);
+    background-color: var(--surface);
     color: var(--white-text);
     width: 100%;
 
@@ -28,6 +28,12 @@
     display: flex;
     justify-content: center;
     gap: var(--spacing-sm);
+     cursor: pointer;
+}
+
+.contactLinks:hover {
+    color: var(--hover-text);
+    cursor: pointer;
 }
 
 

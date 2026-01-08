@@ -1,0 +1,71 @@
+/* ==========================================================================
+IMAGES
+========================================================================== */
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-lg {
+    width: 72px;
+    height: 72px;
+}
+
+.thumb-xs {
+    width: 48px;
+    height: 48px;
+}
+
+.thumb-sm {
+    width: 64px;
+    height: 64px;
+}
+
+.thumb-md {
+    width: 80px;
+    height: 80px;
+}
+
+.thumb-lg {
+    width: 120px;
+    height: 120px;
+}
+
+/* ==========================================================================
+ICONS
+========================================================================== */
+
+.icon-base {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-small {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-medium {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-large {
+    width: 48px;
+    height: 48px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}

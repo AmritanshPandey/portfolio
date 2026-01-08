@@ -1,0 +1,151 @@
+
+/* ==========================================================================
+BENTO GRID
+========================================================================== */
+.bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Background image */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+/* Contrast overlay */
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+
+}
+
+/* Content layer */
+.card-content {
+    position: absolute;
+    bottom: 0px;
+    padding: 24px;
+    width: 100%;
+    color: var(--white);
+    z-index: 1;
+
+}
+
+/* Large */
+.bento-lg {
+    min-height: 512px;
+}
+
+/* Medium */
+.bento-md {
+    min-height: 364px;
+}
+
+s
+
+/* Small */
+.bento-sm {
+    min-height: 256px;
+}
+
+
+
+/* ==========================================================================
+GLOBAL COMPONENT STYLES
+========================================================================== */
+
+.text-button {
+    cursor: pointer;
+    background-color: none;
+    color: var(--primary-text);
+    padding: 4px 0;
+    border-radius: var(--border-radius-md);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.primary-button {
+    background-color: var(--primary-text);
+    color: var(--white-text);
+    padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.tag {
+  white-space: nowrap;
+}
+
+.tags {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    color: var(--black-text);
+    padding: 8px 16px;
+    font-size: var(--font-size-sm);
+    font-weight: var(--fw-medium);
+    width: fit-content;
+    flex: 0 0 auto;
+    min-width: auto;
+     max-width: 100%;
+}
+
+
+.tags::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+    cursor: pointer;
+}
+
+.tags::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
+}
+
+
+.tags:hover {
+    box-shadow: var(--shadow-lg);
+    background-color: var(--surface);
+    color: var(--primary-color);
+    cursor: pointer;
+}

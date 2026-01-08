@@ -1,5 +1,7 @@
 import React from "react";
 import { IconChevronRight } from '@tabler/icons-react';
+import styles from './SectionTitle.module.css'
+
 interface SectionTitleProps {
   title: string;
   subtitle?: string;
@@ -14,18 +16,18 @@ export default function SectionTitle({
   actionHref,
 }: SectionTitleProps) {
   return (
-    <div className="section-header flex items-center justify-between margin-bottom-xl">
+    <div className={styles.sectionTitleContainer}>
       <div>
-        <span className="h1">{title}</span>
-        {subtitle && <p className="body-muted">{subtitle}</p>}
+        <span>{title}</span>
+        {subtitle && <p className="body">{subtitle}</p>}
       </div>
 
       {actionHref && (
-        <div className="flex items-center btn-text">
-        <a href={actionHref} className="btn-text">
-          {actionLabel}
-        </a>
-        <IconChevronRight stroke={2} />
+        <div className={styles.sectionTitleButton}>
+          <a href={actionHref} className="btn-text">
+            {actionLabel}
+          </a>
+          <IconChevronRight stroke={2} />
         </div>
       )}
     </div>

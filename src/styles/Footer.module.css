@@ -1,79 +1,51 @@
 .footer {
-    background-color: var(--surface);
-    color: var(--white-text);
+    background-color: var(--surface-black);
+    color: var(--white);
     width: 100%;
 
 }
 
 .footerContainer {
-    padding: 24px 200px;
+    padding: 56px 200px;
 }
-
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-    align-items: baseline;
-}
-
-.contactList {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-    align-items: baseline;
-}
-
-.contactLinks {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-sm);
-     cursor: pointer;
-}
-
-.contactLinks:hover {
-    color: var(--hover-text);
-    cursor: pointer;
-}
-
 
 .footerText {
-    font-size: var(--font-size-sm);
-    color: var(--black-text);
-    background-color: var(--surface-light);
-    padding: 16px;
+    color: var(--white);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-lg);
+    padding: var(--padding-md);
     text-align: center;
+    background-color: var(--surface-grey);
 }
 
 
-/* Tablet */
-@media (max-width: 768px) {
 
-    .contact:not(:last-child) {
-        padding-bottom: var(--spacing-md);
-        border-bottom: solid 1px var(--border-color);
-    }
 
-    .footerText {
-        font-size: var(--font-size-sm);
-        color: var(--black-text);
-        background-color: var(--surface-light);
-        padding: 16px 0;
-    }
-
-}
-
+/*📱 Mobile (≤ 480px)*/
 @media (max-width: 480px) {
-
     .footerContainer {
-        padding: 24px;
+        padding: 56px 24px;
     }
+}
 
 
-    .contact:not(:last-child) {
-        padding-bottom: var(--spacing-md);
-        border-bottom: solid 1px var(--border-color-light);
+/*📱 Large phones / small tablets (481px – 768px) */
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 56px 24px;
     }
+}
 
+/*📱 iPad / Tablets (768px – 1024px)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footerContainer {
+        padding: 56px 48px;
+    }
+}
 
+/*💻 Laptop (1025px – 1366px)*/
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .footerContainer {
+        padding: 56px 24px;
+    }
 }

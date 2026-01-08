@@ -1,4 +1,5 @@
-import Tags from "../Tags";
+import Tags from "../Tags/Tags";
+
 
 interface BentoItem {
     title: string;
@@ -21,12 +22,12 @@ function BentoCard({ items }: BentoCardProps) {
                     style={{ backgroundImage: `url(${item.image})` }}
                 >
 
-
-                    <div className="flex flex-col gap-2 card-content glass-background-dark">
-                        <span className="h2">{item.title}</span>
+                    <div className="img-overlay " />
+                    <div className="flex flex-col gap-2 bento-card-content">
+                        <span className="h3">{item.title}</span>
 
                         {item.tags && (
-                       <div className="flex flex-row flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2">
                                 {item.tags.map((tag, i) => (
                                     <Tags key={i} title={tag} />
                                 ))}

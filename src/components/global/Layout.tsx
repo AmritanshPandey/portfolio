@@ -20,7 +20,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
    <main className={montserrat.variable}>
       <Header />
-      <main className="main-container">{children}</main>
+      <main>{children}</main>
       <Footer />
     </main>
   );

@@ -1,11 +1,11 @@
 import BentoCard from "../global/Cards/BentoCard"
-import SectionTitle from "../global/SectionTitle"
-import Tags from "../global/Tags"
+import SectionTitle from "../global/SectionTitle/SectionTitle"
+
 
 
 function FeaturedWork() {
     return (
-        <section className="featured-work padding-page">
+        <section className="featured-work padding-page secondary-background">
             <SectionTitle
                 title="Featured Work"
                 actionLabel="Explore All"
@@ -51,7 +51,7 @@ function FeaturedWork() {
                         items={[
                             {
                                 title: "UX Case Studies",
-                                image: "/assets/images/bento2.png",
+                                image: "/assets/images/bento5.png",
                                 size: "bento-lg",
                                 tags: ["UX Strategy", "UI Design", "Interaction Design"]
                             }

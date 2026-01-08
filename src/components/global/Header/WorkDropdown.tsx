@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { IconDevices, IconChevronDown, IconDeviceImac, IconSparkles, IconDeviceMobileCode, IconCategory2, IconCode, IconTableHeart, IconBrandSupernova, IconIcons, IconCube } from '@tabler/icons-react';
-import styles from "../../../styles/Header.module.css";
+import styles from "./Header.module.css";
 import { useState, useRef, useEffect } from "react";
 import FeaturedWork from "./FeaturedWork";
 
@@ -35,7 +35,7 @@ export default function WorkDropdown() {
       onMouseLeave={closeMenu}
     >
       <span className={styles.dropdownToggle}>
-        Work
+     <span className="body-semibold">Work</span>
         <IconChevronDown
           className={`${styles.dropdownIcon} ${isOpen ? styles.rotate : ""
             }`}
@@ -106,7 +106,7 @@ export default function WorkDropdown() {
 
             <div className="flex flex-row gap-2 margin-top-sm items-center highlight-color cursor-pointer">
               <IconCube stroke={1.5} />
-              <span className="label">3D Renders</span>
+              <span className="label">3D Models</span>
             </div>
 
 

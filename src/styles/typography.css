@@ -1,0 +1,256 @@
+/* ==========================================================================
+ TYPOGRAPHY
+========================================================================== */
+
+:root {
+
+
+
+    /* Font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Line heights */
+    --lh-tight: 1.1;
+    --lh-snug: 1.25;
+    --lh-normal: 1.5;
+
+    /* Font sizes */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 24px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 40px;
+    --font-size-xxxl: 48px;
+    --font-size-xxxxl: 56px;
+    --font-size-sxl: 60px;
+    --font-size-sxxl: 64px;
+    --font-size-sxxxl: 72px;
+    --font-size-sxxxxl: 96px;
+    --font-size-sxxxxxl: 128px;
+
+
+}
+
+/* ==========================================================================
+ TYPOGRAPHY SETUP
+========================================================================== */
+
+.display {
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+    font-size: var(--font-size-sxxxxxl);
+}
+
+.h1 {
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    font-size: var(--font-size-xxl);
+}
+
+.h2 {
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-normal);
+    font-size: var(--font-size-xl);
+}
+
+.h3 {
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-normal);
+    font-size: var(--font-size-lg);
+}
+
+.subheading {
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-normal);
+    font-size: var(--font-size-lg);
+}
+
+.eyebrow {
+    font-size: var(--font-size-sm);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-normal);
+    text-transform: uppercase;
+}
+
+.eyebrow-heading {
+    font-size: var(--font-size-xl);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-normal);
+    text-transform: uppercase;
+}
+
+.body {
+    font-size: var(--font-size-base);
+    line-height: var(--lh-normal);
+}
+
+.body-semibold {
+    font-weight: var(--fw-semibold);
+    font-size: var(--font-size-base);
+}
+
+.body-bold {
+    font-weight: var(--fw-bold);
+    font-size: var(--font-size-base);
+    line-height: var(--lh-normal);
+}
+
+.label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-normal);
+}
+
+.caption {
+    font-size: var(--font-size-xs);
+    font-weight: var(--fw-regular);
+}
+
+
+
+.btn-text {
+    font-size: var(--font-size-base);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-text:hover {
+    color: var(--primary-accent-color);
+}
+
+.btn-text-black {
+    font-size: var(--font-size-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.btn-text-black:hover {
+    color: var(--primary-color);
+}
+
+
+
+
+/* Responsive Typography */
+
+/*iPhone SE, Mini, Older non-plus*/
+@media (max-width: 374px) {
+    .display {
+        font-size: var(--font-size-xxxxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+    .h3 {
+        font-size: var(--font-size-base);
+    }
+
+    .subheading {
+        font-size: var(--font-size-base);
+    }
+}
+
+/*iPhone Pro*/
+@media (min-width: 375px) and (max-width: 413px) {
+    .display {
+        font-size: var(--font-size-sxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+    .h3 {
+        font-size: var(--font-size-base);
+    }
+
+    .subheading {
+        font-size: var(--font-size-base);
+    }
+}
+
+/*iPhone Max*/
+@media (min-width: 414px) and (max-width: 480px) {
+    .display {
+        font-size: var(--font-size-sxxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+    .h3 {
+        font-size: var(--font-size-md);
+    }
+
+    .subheading {
+        font-size: var(--font-size-md);
+    }
+}
+
+/*iPad Mini/9th/10th gen*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .display {
+        font-size: var(--font-size-sxxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+    .h3 {
+        font-size: var(--font-size-md);
+    }
+
+    .subheading {
+        font-size: var(--font-size-md);
+    }
+}
+
+/*iPad Pro/ Air 11”*/
+@media (min-width: 834px) and (max-width: 1194px) {
+    .display {
+        font-size: var(--font-size-sxxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+    .h3 {
+        font-size: var(--font-size-md);
+    }
+
+    .subheading {
+        font-size: var(--font-size-md);
+    }
+}
+
+
+/*iPad Pro/ Air 12.9”*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .display {
+        font-size: var(--font-size-sxxxl);
+    }
+
+    .eyebrow-heading {
+        font-size: var(--font-size-md);
+    }
+
+        .h3 {
+        font-size: var(--font-size-md);
+    }
+
+    .subheading {
+        font-size: var(--font-size-md);
+    }
+}
